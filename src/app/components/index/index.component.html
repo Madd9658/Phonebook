@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="row row-content">
+    <table class="table table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Contact List</th>
+      </tr>
+      <tr *ngFor="let share of shares | async">
+        <td>{{ share.name }}</td>
+        <td>{{ share.number }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
